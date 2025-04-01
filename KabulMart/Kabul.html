@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Store</title>
+    <link rel="stylesheet" href="Kabul.css">
+</head>
+<body>
+    <nav>
+        <div class="logo" id = "logo">Kabul Mart</div>
+        <ul>
+            <li><a href="#logo">Home</a></li>
+            <li><a href="#Products">Products</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <div class="navbar">
+                <button id="button">Shop
+                    <div class="relative">
+                        <div class="dropdownstuff">
+                            <a href="#foods">Food</a>
+                            <a href="#snackp">Snacks</a>
+                            <a href="#drinkp">Drinks</a>
+                            <a href="#healthp">Health Product</a>
+                        </div>
+                    </div>
+                </button>
+            </div>
+            <li><button class="cart-button" onclick="toggleCart()">Cart</button></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1 id="Products">Products</h1>
+
+        <div class="food-card">
+            
+            <div id="foods">
+                <h1>Foods</h1>
+                <div class="card1">
+                    <img src="Images/BeefShawarma.png" alt="Food Image">
+                    <h2 id="name1">Beef Shawarma</h2>
+                    <h3 value = "8" id="v1">$8 per</h3>
+                    <div class="quantity-selector">
+                        <label for="quantity1">Quantity (lb):</label>
+                        <input type="number" id="quantity1" name="quantity" min="0" max="20" value="0">
+                    </div>
+                </div>
+                <div class="card2">
+                    <img src="Images/AmchurPowder.png" alt="Food Image">
+                    <h2 id="name2">Amchur Powder</h2>
+                    <h3 value = "5" id="v2">$5 per lb</h3>
+                    <div class="quantity-selector">
+                        <label for="quantity2">Quantity (lb):</label>
+                        <input type="number" id="quantity2" name="quantity" min="0" max="20" value="0">
+                    </div>
+                </div>
+                <div class="card3">
+                    <img src="Images/Almonds.jpg" alt="Food Image">
+                    <h2 id="name3">Almonds</h2>
+                    <h3 value = "4" id="v3">$4 per lb</h3>
+                    <div class="quantity-selector">
+                        <label for="quantity3">Quantity (lb):</label>
+                        <input type="number" id="quantity3" name="quantity" min="0" max="20" value="0">
+                    </div>
+                </div>
+                <div class="card1">
+                    <img src="Images/Basakpudding.png" alt="Food Image">
+                    <h2 id="name4">Basak pudding</h2>
+                    <h3 value = "3.2" id="v4">$3.20</h3>
+                    <div class="quantity-selector">
+                        <label for="quantity4">Quantity:</label>
+                        <input type="number" id="quantity4" name="quantity" min="0" max="20" value="0">
+                    </div>
+                </div>
+                <div class="card2">
+                    <img src="Images/beans.jpg" alt="Food Image">
+                    <h2 id="name5">Beans</h2>
+                    <h3 value = "3.3" id="v5">$3.30</h3>
+                    <div class="quantity-selector">
+                        <label for="quantity5">Quantity:</label>
+                        <input type="number" id="quantity5" name="quantity" min="0" max="20" value="0">
+                    </div>
+                </div>
+                <div class="card2">
+                    <img src="Images/ThickTomatoSoup.png" alt="Food Image">
+                    <h2 id="name8">Tomato Soup</h2>
+                    <h3 value = "3" id="v8">$3</h3>
+                    <div class="quantity-selector">
+                        <label for="quantity8">Quantity:</label>
+                        <input type="number" id="quantity8" name="quantity" min="0" max="20" value="0">
+                    </div>
+                </div>
+                <div class="card2">
+                    <img src="Images/SoupStarter.png" alt="Food Image">
+                    <h2 id="name8">Soup Starter</h2>
+                    <h3 value = "3" id="v8">$3</h3>
+                    <div class="quantity-selector">
+                        <label for="quantity8">Quantity:</label>
+                        <input type="number" id="quantity8" name="quantity" min="0" max="20" value="0">
+                    </div>
+                </div>
+                <div class="card2">
+                    <img src="Images/ShaniHaleemMix.png" alt="Food Image">
+                    <h2 id="name8">Shani Haleem Mix</h2>
+                    <h3 value = "3" id="v8">$3</h3>
+                    <div class="quantity-selector">
+                        <label for="quantity8">Quantity:</label>
+                        <input type="number" id="quantity8" name="quantity" min="0" max="20" value="0">
+                    </div>
+                </div>
+                <div class="card2">
+                    <img src="Images/SadafGiardiniera.png" alt="Food Image">
+                    <h2 id="name8">Sadaf Giardiniera</h2>
+                    <h3 value = "3" id="v8">$3</h3>
+                    <div class="quantity-selector">
+                        <label for="quantity8">Quantity:</label>
+                        <input type="number" id="quantity8" name="quantity" min="0" max="20" value="0">
+                    </div>
+                </div>
+                <div class="card3">
+                    <img src="Images/BeefShawarma.png" alt="Food Image">
+                    <h2 id="name6">Beef Shawarma</h2>
+                    <h3 value = "2.5" id="v6">$2.50</h3>
+                    <div class="quantity-selector">
+                        <label for="quantity6">Quantity:</label>
+                        <input type="number" id="quantity6" name="quantity" min="0" max="20" value="0">
+                    </div>
+                </div>
+                <div class="card1">
+                    <img src="Images/BihariKabab.png" alt="Food Image">
+                    <h2 id="name7">Bihari Kabab</h2>
+                    <h3 value = "12" id="v7">$12 per lb</h3>
+                    <div class="quantity-selector">
+                        <label for="quantity7">Quantity (lb):</label>
+                        <input type="number" id="quantity7" name="quantity" min="0" max="20" value="0">
+                    </div>
+                </div>
+                <div class="card2">
+                    <img src="Images/CafeNajiar.png" alt="Food Image">
+                    <h2 id="name8">Cafe Najiar</h2>
+                    <h3 value = "3" id="v8">$3</h3>
+                    <div class="quantity-selector">
+                        <label for="quantity8">Quantity:</label>
+                        <input type="number" id="quantity8" name="quantity" min="0" max="20" value="0">
+                    </div>
+                </div>
+                <div class="card2">
+                    <img src="Images/ChickenJaffrezi.png" alt="Food Image">
+                    <h2 id="name8">Chicken Jaffrezi</h2>
+                    <h3 value = "3" id="v8">$3</h3>
+                    <div class="quantity-selector">
+                        <label for="quantity8">Quantity:</label>
+                        <input type="number" id="quantity8" name="quantity" min="0" max="20" value="0">
+                    </div>
+                </div>
+                <div class="card2">
+                    <img src="Images/ChickenTikka.png" alt="Food Image">
+                    <h2 id="name8">Chicken Tikka</h2>
+                    <h3 value = "3" id="v8">$3</h3>
+                    <div class="quantity-selector">
+                        <label for="quantity8">Quantity:</label>
+                        <input type="number" id="quantity8" name="quantity" min="0" max="20" value="0">
+                    </div>
+                </div>
+                <div class="card2">
+                    <img src="Images/ChickenKabob.png" alt="Food Image">
+                    <h2 id="name8">Chicken Kabob</h2>
+                    <h3 value = "3" id="v8">$3</h3>
+                    <div class="quantity-selector">
+                        <label for="quantity8">Quantity:</label>
+                        <input type="number" id="quantity8" name="quantity" min="0" max="20" value="0">
+                    </div>
+                </div>
+                <div class="card2">
+                    <img src="Images/CitricAcid.png" alt="Food Image">
+                    <h2 id="name8">Citric Acid</h2>
+                    <h3 value = "3" id="v8">$3</h3>
+                    <div class="quantity-selector">
+                        <label for="quantity8">Quantity:</label>
+                        <input type="number" id="quantity8" name="quantity" min="0" max="20" value="0">
+                    </div>
+                </div>
+                <div class="card2">
+                    <img src="Images/CornFlour.png" alt="Food Image">
+                    <h2 id="name8">Corn Flour</h2>
+                    <h3 value = "3" id="v8">$3</h3>
+                    <div class="quantity-selector">
+                        <label for="quantity8">Quantity:</label>
+                        <input type="number" id="quantity8" name="quantity" min="0" max="20" value="0">
+                    </div>
+                </div>
+                <div class="card2">
+                    <img src="Images/dalbiji.png" alt="Food Image">
+                    <h2 id="name8">Dalbiji</h2>
+                    <h3 value = "3" id="v8">$3</h3>
+                    <div class="quantity-selector">
+                        <label for="quantity8">Quantity:</label>
+                        <input type="number" id="quantity8" name="quantity" min="0" max="20" value="0">
+                    </div>
+                </div>
+                <div class="card2">
+                    <img src="Images/GranulatedSugar.png" alt="Food Image">
+                    <h2 id="name8">Granulated Sugar</h2>
+                    <h3 value = "3" id="v8">$3</h3>
+                    <div class="quantity-selector">
+                        <label for="quantity8">Quantity:</label>
+                        <input type="number" id="quantity8" name="quantity" min="0" max="20" value="0">
+                    </div>
+                </div>
+                <div class="card2">
+                    <img src="Images/GroundDriedLime.png" alt="Food Image">
+                    <h2 id="name8">Ground Dried Lime</h2>
+                    <h3 value = "3" id="v8">$3</h3>
+                    <div class="quantity-selector">
+                        <label for="quantity8">Quantity:</label>
+                        <input type="number" id="quantity8" name="quantity" min="0" max="20" value="0">
+                    </div>
+                </div>
+                <div class="card2">
+                    <img src="Images/groundmeatkabob.png" alt="Food Image">
+                    <h2 id="name8">Ground Meat Kabob</h2>
+                    <h3 value = "3" id="v8">$3</h3>
+                    <div class="quantity-selector">
+                        <label for="quantity8">Quantity:</label>
+                        <input type="number" id="quantity8" name="quantity" min="0" max="20" value="0">
+                    </div>
+                </div>
+                <div class="card2">
+                    <img src="Images/GulabJamon.png" alt="Food Image">
+                    <h2 id="name8">Gulab Jamon</h2>
+                    <h3 value = "3" id="v8">$3</h3>
+                    <div class="quantity-selector">
+                        <label for="quantity8">Quantity:</label>
+                        <input type="number" id="quantity8" name="quantity" min="0" max="20" value="0">
+                    </div>
+                </div>
+                <div class="card2">
+                    <img src="Images/ImportedInstantYeast.png" alt="Food Image">
+                    <h2 id="name8">Instant Yeast</h2>
+                    <h3 value = "3" id="v8">$3</h3>
+                    <div class="quantity-selector">
+                        <label for="quantity8">Quantity:</label>
+                        <input type="number" id="quantity8" name="quantity" min="0" max="20" value="0">
+                    </div>
+                </div>
+                <div class="card2">
+                    <img src="Images/ItalianMushroomsoup.png" alt="Food Image">
+                    <h2 id="name8">Italian Mushroom soup</h2>
+                    <h3 value = "3" id="v8">$3</h3>
+                    <div class="quantity-selector">
+                        <label for="quantity8">Quantity:</label>
+                        <input type="number" id="quantity8" name="quantity" min="0" max="20" value="0">
+                    </div>
+                </div>
+                <div class="card2">
+                    <img src="Images/LahoriFish.png" alt="Food Image">
+                    <h2 id="name8">Lahori Fish</h2>
+                    <h3 value = "3" id="v8">$3</h3>
+                    <div class="quantity-selector">
+                        <label for="quantity8">Quantity:</label>
+                        <input type="number" id="quantity8" name="quantity" min="0" max="20" value="0">
+                    </div>
+                </div>
+                <div class="card2">
+                    <img src="Images/MalaiKofta.png" alt="Food Image">
+                    <h2 id="name8">Malai Kofta</h2>
+                    <h3 value = "3" id="v8">$3</h3>
+                    <div class="quantity-selector">
+                        <label for="quantity8">Quantity:</label>
+                        <input type="number" id="quantity8" name="quantity" min="0" max="20" value="0">
+                    </div>
+                </div>
+                <div class="card2">
+                    <img src="Images/Meattenderizer.png" alt="Food Image">
+                    <h2 id="name8">Meat Tenderizer</h2>
+                    <h3 value = "3" id="v8">$3</h3>
+                    <div class="quantity-selector">
+                        <label for="quantity8">Quantity:</label>
+                        <input type="number" id="quantity8" name="quantity" min="0" max="20" value="0">
+                    </div>
+                </div>
+                <div class="card2">
+                    <img src="Images/MurghCholay.png" alt="Food Image">
+                    <h2 id="name8">Murgh Cholay</h2>
+                    <h3 value = "3" id="v8">$3</h3>
+                    <div class="quantity-selector">
+                        <label for="quantity8">Quantity:</label>
+                        <input type="number" id="quantity8" name="quantity" min="0" max="20" value="0">
+                    </div>
+                </div>
+                <div class="card2">
+                    <img src="Images/PaniPuri.png" alt="Food Image">
+                    <h2 id="name8">Pani Puri</h2>
+                    <h3 value = "3" id="v8">$3</h3>
+                    <div class="quantity-selector">
+                        <label for="quantity8">Quantity:</label>
+                        <input type="number" id="quantity8" name="quantity" min="0" max="20" value="0">
+                    </div>
+                </div>
+                <div class="card2">
+                    <img src="Images/moongdal.png" alt="Food Image">
+                    <h2 id="name8">Moong dal</h2>
+                    <h3 value = "3" id="v8">$3</h3>
+                    <div class="quantity-selector">
+                        <label for="quantity8">Quantity:</label>
+                        <input type="number" id="quantity8" name="quantity" min="0" max="20" value="0">
+                    </div>
+                </div>
+                <div class="card2">
+                    <img src="Images/OrganicVirginCoconutOil.png" alt="Food Image">
+                    <h2 id="name8">Organic Virgin Coconut Oil</h2>
+                    <h3 value = "3" id="v8">$3</h3>
+                    <div class="quantity-selector">
+                        <label for="quantity8">Quantity:</label>
+                        <input type="number" id="quantity8" name="quantity" min="0" max="20" value="0">
+                    </div>
+                </div>
+                <div class="card2">
+                    <img src="Images/PankoPlain.png" alt="Food Image">
+                    <h2 id="name8">Panko Plain</h2>
+                    <h3 value = "3" id="v8">$3</h3>
+                    <div class="quantity-selector">
+                        <label for="quantity8">Quantity:</label>
+                        <input type="number" id="quantity8" name="quantity" min="0" max="20" value="0">
+                    </div>
+                </div>
+                <div class="card2">
+                    <img src="Images/pasta.png" alt="Food Image">
+                    <h2 id="name8">Pasta</h2>
+                    <h3 value = "3" id="v8">$3</h3>
+                    <div class="quantity-selector">
+                        <label for="quantity8">Quantity:</label>
+                        <input type="number" id="quantity8" name="quantity" min="0" max="20" value="0">
+                    </div>
+                </div>
+                <div class="card2">
+                    <img src="Images/PilauBiryani.png" alt="Food Image">
+                    <h2 id="name8">Pilau Biryani</h2>
+                    <h3 value = "3" id="v8">$3</h3>
+                    <div class="quantity-selector">
+                        <label for="quantity8">Quantity:</label>
+                        <input type="number" id="quantity8" name="quantity" min="0" max="20" value="0">
+                    </div>
+                </div>
+                <div class="card2">
+                    <img src="Images/PlainSalt.png" alt="Food Image">
+                    <h2 id="name8">Plain Salt</h2>
+                    <h3 value = "3" id="v8">$3</h3>
+                    <div class="quantity-selector">
+                        <label for="quantity8">Quantity:</label>
+                        <input type="number" id="quantity8" name="quantity" min="0" max="20" value="0">
+                    </div>
+                </div>
+                <div class="card2">
+                    <img src="Images/PlainPankoBreadCrumbs.png" alt="Food Image">
+                    <h2 id="name8">Plain Panko Bread Crumbs</h2>
+                    <h3 value = "3" id="v8">$3</h3>
+                    <div class="quantity-selector">
+                        <label for="quantity8">Quantity:</label>
+                        <input type="number" id="quantity8" name="quantity" min="0" max="20" value="0">
+                    </div>
+                </div>
+                <div class="card2">
+                    <img src="Images/RajmaRaseela.png" alt="Food Image">
+                    <h2 id="name8">Rajma Raseela</h2>
+                    <h3 value = "3" id="v8">$3</h3>
+                    <div class="quantity-selector">
+                        <label for="quantity8">Quantity:</label>
+                        <input type="number" id="quantity8" name="quantity" min="0" max="20" value="0">
+                    </div>
+                </div>
+                <div class="card2">
+                    <img src="Images/Redchilipowder.png" alt="Food Image">
+                    <h2 id="name8">Red Chili Powder</h2>
+                    <h3 value = "3" id="v8">$3</h3>
+                    <div class="quantity-selector">
+                        <label for="quantity8">Quantity:</label>
+                        <input type="number" id="quantity8" name="quantity" min="0" max="20" value="0">
+                    </div>
+                </div>
+                <div class="card2">
+                    <img src="Images/RajmaRaseela.png" alt="Food Image">
+                    <h2 id="name8">Rajma Raseela</h2>
+                    <h3 value = "3" id="v8">$3</h3>
+                    <div class="quantity-selector">
+                        <label for="quantity8">Quantity:</label>
+                        <input type="number" id="quantity8" name="quantity" min="0" max="20" value="0">
+                    </div>
+                </div>
+                <div class="card2">
+                    <img src="Images/rasins.jpg" alt="Food Image">
+                    <h2 id="name8">Rasins</h2>
+                    <h3 value = "4" id="v8">$4</h3>
+                    <div class="quantity-selector">
+                        <label for="quantity8">Quantity:</label>
+                        <input type="number" id="quantity8" name="quantity" min="0" max="20" value="0">
+                    </div>
+                </div>
+                <div class="card2">
+                    <img src="Images/YaraEgyptianRice.png" alt="Food Image">
+                    <h2 id="name8">Yara Egyptian Rice</h2>
+                    <h3 value = "3" id="v8">$3</h3>
+                    <div class="quantity-selector">
+                        <label for="quantity8">Quantity:</label>
+                        <input type="number" id="quantity8" name="quantity" min="0" max="20" value="0">
+                    </div>
+                </div>
+                <div class="card2">
+                    <img src="Images/WoodWards.png" alt="Food Image">
+                    <h2 id="name8">WoodWards</h2>
+                    <h3 value = "3" id="v8">$3</h3>
+                    <div class="quantity-selector">
+                        <label for="quantity8">Quantity:</label>
+                        <input type="number" id="quantity8" name="quantity" min="0" max="20" value="0">
+                    </div>
+                </div>
+            </div>
+            <div id="snackp">
+                <h1>Snacks</h1>
+                <div class="card2">
+                    <img src="Images/TheUltimateclassiccakemix.png" alt="Food Image">
+                    <h2 id="name8">The Ultimate Classic Cake Mix</h2>
+                    <h3 value = "3" id="v8">$3</h3>
+                    <div class="quantity-selector">
+                        <label for="quantity8">Quantity:</label>
+                        <input type="number" id="quantity8" name="quantity" min="0" max="20" value="0">
+                    </div>
+                </div>
+                <div class="card2">
+                    <img src="Images/StrawberrySnackCakes.png" alt="Food Image">
+                    <h2 id="name8">Strawberry Snack Cakes</h2>
+                    <h3 value = "3" id="v8">$3</h3>
+                    <div class="quantity-selector">
+                        <label for="quantity8">Quantity:</label>
+                        <input type="number" id="quantity8" name="quantity" min="0" max="20" value="0">
+                    </div>
+                </div>
+                <div class="card2">
+                    <img src="Images/PudraSekeri.png" alt="Food Image">
+                    <h2 id="name8">Pudra Sekeri</h2>
+                    <h3 value = "3" id="v8">$3</h3>
+                    <div class="quantity-selector">
+                        <label for="quantity8">Quantity:</label>
+                        <input type="number" id="quantity8" name="quantity" min="0" max="20" value="0">
+                    </div>
+                </div>
+                
+                <div class="card2">
+                    <img src="Images/kaju mixture.png" alt="Food Image">
+                    <h2 id="name8">Kaju Mixture</h2>
+                    <h3 value = "3" id="v8">$3</h3>
+                    <div class="quantity-selector">
+                        <label for="quantity8">Quantity:</label>
+                        <input type="number" id="quantity8" name="quantity" min="0" max="20" value="0">
+                    </div>
+                </div>
+                <div class="card2">
+                    <img src="Images/PinaColadaJellyCrystals.png" alt="Food Image">
+                    <h2 id="name8">Pina Colada Jelly Crystals</h2>
+                    <h3 value = "3" id="v8">$3</h3>
+                    <div class="quantity-selector">
+                        <label for="quantity8">Quantity:</label>
+                        <input type="number" id="quantity8" name="quantity" min="0" max="20" value="0">
+                    </div>
+                </div>
+                <div class="card2">
+                    <img src="Images/KhattaMeetha.png" alt="Food Image">
+                    <h2 id="name8">Khatta Meetha</h2>
+                    <h3 value = "3" id="v8">$3</h3>
+                    <div class="quantity-selector">
+                        <label for="quantity8">Quantity:</label>
+                        <input type="number" id="quantity8" name="quantity" min="0" max="20" value="0">
+                    </div>
+                </div>
+                <div class="card2">
+                    <img src="Images/KaymackLezzdrade.png" alt="Food Image">
+                    <h2 id="name8">Kamyamack Lezzdrade</h2>
+                    <h3 value = "3" id="v8">$3</h3>
+                    <div class="quantity-selector">
+                        <label for="quantity8">Quantity:</label>
+                        <input type="number" id="quantity8" name="quantity" min="0" max="20" value="0">
+                    </div>
+                </div>
+                <div class="card2">
+                    <img src="Images/MilkCakes.png" alt="Food Image">
+                    <h2 id="name8">Milk Cakes</h2>
+                    <h3 value = "3" id="v8">$3</h3>
+                    <div class="quantity-selector">
+                        <label for="quantity8">Quantity:</label>
+                        <input type="number" id="quantity8" name="quantity" min="0" max="20" value="0">
+                    </div>
+                </div>
+                <div class="card2">
+                    <img src="Images/MangoDeliciousDessertforDelightful.png" alt="Food Image">
+                    <h2 id="name8">Mango Desserts</h2>
+                    <h3 value = "3" id="v8">$3</h3>
+                    <div class="quantity-selector">
+                        <label for="quantity8">Quantity:</label>
+                        <input type="number" id="quantity8" name="quantity" min="0" max="20" value="0">
+                    </div>
+                </div>
+                <div class="card2">
+                    <img src="Images/Maya.png" alt="Food Image">
+                    <h2 id="name8">Maya snacks</h2>
+                    <h3 value = "3" id="v8">$3</h3>
+                    <div class="quantity-selector">
+                        <label for="quantity8">Quantity:</label>
+                        <input type="number" id="quantity8" name="quantity" min="0" max="20" value="0">
+                    </div>
+                </div>
+                <div class="card1">
+                    <img src="Images/BlueBerryJellyCrystals.png" alt="Food Image">
+                    <h2 id="name1">Blue Berry Jelly Crystals</h2>
+                    <h3 value = "6" id="v1">$6 per lb</h3>
+                    <div class="quantity-selector">
+                        <label for="quantity1">Quantity (lb):</label>
+                        <input type="number" id="quantity1" name="quantity" min="0" max="20" value="0">
+                    </div>
+                </div>
+                <div class="card2">
+                    <img src="Images/CakeRusk.png" alt="Food Image">
+                    <h2 id="name2">Cake Rusk</h2>
+                    <h3 value = "5" id="v2">$5 per lb</h3>
+                    <div class="quantity-selector">
+                        <label for="quantity2">Quantity (lb):</label>
+                        <input type="number" id="quantity2" name="quantity" min="0" max="20" value="0">
+                    </div>
+                </div>
+                <div class="card3">
+                    <img src="Images/CakeRuskBlue.png" alt="Food Image">
+                    <h2 id="name3">Cake Rusk</h2>
+                    <h3 value = "4" id="v3">$4 per lb</h3>
+                    <div class="quantity-selector">
+                        <label for="quantity3">Quantity (lb):</label>
+                        <input type="number" id="quantity3" name="quantity" min="0" max="20" value="0">
+                    </div>
+                </div>
+                <div class="card1">
+                    <img src="Images/CakeRuskRed.png" alt="Food Image">
+                    <h2 id="name4">Cake Rusk</h2>
+                    <h3 value = "3.2" id="v4">$3.20</h3>
+                    <div class="quantity-selector">
+                        <label for="quantity4">Quantity:</label>
+                        <input type="number" id="quantity4" name="quantity" min="0" max="20" value="0">
+                    </div>
+                </div>
+                <div class="card2">
+                    <img src="Images/Choco&honeySnackCakes.png" alt="Food Image">
+                    <h2 id="name5">Choco&honey Snack Cakes</h2>
+                    <h3 value = "3.3" id="v5">$3.30</h3>
+                    <div class="quantity-selector">
+                        <label for="quantity5">Quantity:</label>
+                        <input type="number" id="quantity5" name="quantity" min="0" max="20" value="0">
+                    </div>
+                </div>
+                <div class="card3">
+                    <img src="Images/Cocomo.png" alt="Food Image">
+                    <h2 id="name6">Cocomo</h2>
+                    <h3 value = "2.5" id="v6">$2.50</h3>
+                    <div class="quantity-selector">
+                        <label for="quantity6">Quantity:</label>
+                        <input type="number" id="quantity6" name="quantity" min="0" max="20" value="0">
+                    </div>
+                </div>
+                <div class="card1">
+                    <img src="Images/CreamCaramel.png" alt="Food Image">
+                    <h2 id="name7">Cream Caramel</h2>
+                    <h3 value = "12" id="v7">$12 per lb</h3>
+                    <div class="quantity-selector">
+                        <label for="quantity7">Quantity (lb):</label>
+                        <input type="number" id="quantity7" name="quantity" min="0" max="20" value="0">
+                    </div>
+                </div>
+                <div class="card2">
+                    <img src="Images/DamlaWorms.png" alt="Food Image">
+                    <h2 id="name8">Damla Worms</h2>
+                    <h3 value = "3" id="v8">$3</h3>
+                    <div class="quantity-selector">
+                        <label for="quantity8">Quantity:</label>
+                        <input type="number" id="quantity8" name="quantity" min="0" max="20" value="0">
+                    </div>
+                </div>
+                <div class="card2">
+                    <img src="Images/DateSyrup.png" alt="Food Image">
+                    <h2 id="name8">Date Syrup</h2>
+                    <h3 value = "3" id="v8">$3</h3>
+                    <div class="quantity-selector">
+                        <label for="quantity8">Quantity:</label>
+                        <input type="number" id="quantity8" name="quantity" min="0" max="20" value="0">
+                    </div>
+                </div>
+                <div class="card2">
+                    <img src="Images/Freekeh.png" alt="Food Image">
+                    <h2 id="name8">Freekeh</h2>
+                    <h3 value = "3" id="v8">$3</h3>
+                    <div class="quantity-selector">
+                        <label for="quantity8">Quantity:</label>
+                        <input type="number" id="quantity8" name="quantity" min="0" max="20" value="0">
+                    </div>
+                </div>
+                <div class="card2">
+                    <img src="Images/GoldPakmaya.png" alt="Food Image">
+                    <h2 id="name8">Gold Pakmaya</h2>
+                    <h3 value = "3" id="v8">$3</h3>
+                    <div class="quantity-selector">
+                        <label for="quantity8">Quantity:</label>
+                        <input type="number" id="quantity8" name="quantity" min="0" max="20" value="0">
+                    </div>
+                </div>
+            </div>
+            <div id="drinkp">
+                <h1>Drinks</h1>
+                <div class="card1">
+                    <img src="Images/ChicoryWater.png" alt="Food Image">
+                    <h2 id="name1">Chicory Water</h2>
+                    <h3 value = "6" id="v1">$6 per lb</h3>
+                    <div class="quantity-selector">
+                        <label for="quantity1">Quantity (lb):</label>
+                        <input type="number" id="quantity1" name="quantity" min="0" max="20" value="0">
+                    </div>
+                </div>
+                <div class="card2">
+                    <img src="Images/CortasBlossomWater.png" alt="Food Image">
+                    <h2 id="name2">Cortas Blossom Water</h2>
+                    <h3 value = "5" id="v2">$5 per lb</h3>
+                    <div class="quantity-selector">
+                        <label for="quantity2">Quantity (lb):</label>
+                        <input type="number" id="quantity2" name="quantity" min="0" max="20" value="0">
+                    </div>
+                </div>
+                <div class="card3">
+                    <img src="Images/DillWeed.png" alt="Food Image">
+                    <h2 id="name3">Dill Weed</h2>
+                    <h3 value = "4" id="v3">$4 per lb</h3>
+                    <div class="quantity-selector">
+                        <label for="quantity3">Quantity (lb):</label>
+                        <input type="number" id="quantity3" name="quantity" min="0" max="20" value="0">
+                    </div>
+                </div>
+                <div class="card1">
+                    <img src="Images/Ferfresh.png" alt="Food Image">
+                    <h2 id="name4">Ferfresh</h2>
+                    <h3 value = "3.2" id="v4">$3.20</h3>
+                    <div class="quantity-selector">
+                        <label for="quantity4">Quantity:</label>
+                        <input type="number" id="quantity4" name="quantity" min="0" max="20" value="0">
+                    </div>
+                </div>
+                <div class="card2">
+                    <img src="Images/FumitoryWater.png" alt="Food Image">
+                    <h2 id="name5">Fumitory Water</h2>
+                    <h3 value = "3.3" id="v5">$3.30</h3>
+                    <div class="quantity-selector">
+                        <label for="quantity5">Quantity:</label>
+                        <input type="number" id="quantity5" name="quantity" min="0" max="20" value="0">
+                    </div>
+                </div>
+                <div class="card3">
+                    <img src="Images/Hamdard.png" alt="Food Image">
+                    <h2 id="name6">Hamdard</h2>
+                    <h3 value = "2.5" id="v6">$2.50</h3>
+                    <div class="quantity-selector">
+                        <label for="quantity6">Quantity:</label>
+                        <input type="number" id="quantity6" name="quantity" min="0" max="20" value="0">
+                    </div>
+                </div>
+                <div class="card1">
+                    <img src="Images/LimeJuice.png" alt="Food Image">
+                    <h2 id="name7">Lime Juice</h2>
+                    <h3 value = "12" id="v7">$12 per lb</h3>
+                    <div class="quantity-selector">
+                        <label for="quantity7">Quantity (lb):</label>
+                        <input type="number" id="quantity7" name="quantity" min="0" max="20" value="0">
+                    </div>
+                </div>
+                <div class="card2">
+                    <img src="Images/Mintwater.png" alt="Food Image">
+                    <h2 id="name8">Mint Water</h2>
+                    <h3 value = "3" id="v8">$3</h3>
+                    <div class="quantity-selector">
+                        <label for="quantity8">Quantity:</label>
+                        <input type="number" id="quantity8" name="quantity" min="0" max="20" value="0">
+                    </div>
+                </div>
+                <div class="card2">
+                    <img src="Images/PWillow.png" alt="Food Image">
+                    <h2 id="name8">PWillow</h2>
+                    <h3 value = "3" id="v8">$3</h3>
+                    <div class="quantity-selector">
+                        <label for="quantity8">Quantity:</label>
+                        <input type="number" id="quantity8" name="quantity" min="0" max="20" value="0">
+                    </div>
+                </div>
+            </div>
+            <div id="healthp">
+                <h1>Health Products</h1>
+                <div class="card1">
+                    <img src="Images/DettolKills99.99.png" alt="Food Image">
+                    <h2 id="name1">Dettol</h2>
+                    <h3 value = "6" id="v1">$6 per lb</h3>
+                    <div class="quantity-selector">
+                        <label for="quantity1">Quantity (lb):</label>
+                        <input type="number" id="quantity1" name="quantity" min="0" max="20" value="0">
+                    </div>
+                </div>
+                <div class="card2">
+                    <img src="Images/DusJeli.png" alt="Food Image">
+                    <h2 id="name2">Dus Jeli</h2>
+                    <h3 value = "5" id="v2">$5 per lb</h3>
+                    <div class="quantity-selector">
+                        <label for="quantity2">Quantity (lb):</label>
+                        <input type="number" id="quantity2" name="quantity" min="0" max="20" value="0">
+                    </div>
+                </div>
+                <div class="card3">
+                    <img src="Images/DusJelired.png" alt="Food Image">
+                    <h2 id="name3">Dus Jelired</h2>
+                    <h3 value = "4" id="v3">$4 per lb</h3>
+                    <div class="quantity-selector">
+                        <label for="quantity3">Quantity (lb):</label>
+                        <input type="number" id="quantity3" name="quantity" min="0" max="20" value="0">
+                    </div>
+                </div>
+                <div class="card1">
+                    <img src="Images/Pantene.png" alt="Food Image">
+                    <h2 id="name4">Pantene</h2>
+                    <h3 value = "3.2" id="v4">$3.20</h3>
+                    <div class="quantity-selector">
+                        <label for="quantity4">Quantity:</label>
+                        <input type="number" id="quantity4" name="quantity" min="0" max="20" value="0">
+                    </div>
+                </div>
+               
+            
+        </div>
+        
+    </div>
+    <div id="cart-panel" class="cart-panel">
+        <div class="cart-content">
+            <h2>Your Cart</h2>
+            <div id="fortheitems">
+                
+            </div>
+            <button class="close-cart-button" onclick="toggleCart()">Close</button>
+            <button class="pay" onclick="toggleCart()">Pay</button>
+            <!-- cart items  here -->
+        </div>
+    </div>
+    <script>var totalprice = 0;
+        var toggle = 0;
+        function toggleCart() {
+            const cartPanel = document.getElementById('cart-panel');
+            cartPanel.classList.toggle('open');
+        
+            getPrice()
+            toggle = toggle + 1;
+        }
+        
+        function getPrice(){
+            if(toggle%2 == 0){
+            var cart = document.createElement("div");
+            cart.id = "cart";
+            /* var ul = document.createElement("ul"); */
+        
+            for(let i = 1;i<9;i++){
+                var count = document.getElementById("quantity"+i);
+                var pv = count.value;
+                var multi = document.getElementById("v"+i);
+                var multiv = multi.getAttribute("value");
+                pv = pv * multiv;
+                pv = Math.round(pv*100)/100;
+                totalprice = totalprice + pv;
+                if(pv != 0){
+                    var title = document.getElementById("name"+i)
+                    var name = title.innerText;
+                    var cartitem = document.createElement("h2");
+                    cartitem.innerHTML = name + ": $"+ pv;
+                    
+                    cart.appendChild(cartitem);
+                }
+            }
+            var e = document.createElement("h1");
+            e.innerHTML = "Total: $"+totalprice;
+            cart.appendChild(e);
+            var putithere = document.getElementById("fortheitems");
+            putithere.appendChild(cart);
+            }
+            else{
+                console.log("he")
+                var del = document.getElementById("cart");
+                del.remove();
+            }
+        }
+        
+        </script>
+</body>
+</html>
