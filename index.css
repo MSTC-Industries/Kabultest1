@@ -64,7 +64,7 @@ body {
     
 }
 nav {
-    background: linear-gradient(to right, #3a3a3a, #1a1a1a); /* Green gradient */
+    background: linear-gradient(to right, #3a3a3a, #1a1a1a);
     padding: 10px 0;
     display: flex;
     justify-content: space-between;
@@ -124,9 +124,7 @@ h1 {
     justify-content: space-around;
 }
 
-.food-card .card1,
-.food-card .card2,
-.food-card .card3 {
+.food-card .card {
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 5px;
