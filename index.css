@@ -12,15 +12,13 @@ body {
     text-decoration: none;
     font-size: 2rem;
     
-    background-color: rgba(255, 115, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0);
     overflow: hidden;
     display: flex;
     align-items: center;
     
 }
 .navbar a{
-    
-    
     padding: 1.1rem 1.1rem;
     text-decoration: none;
 }
@@ -30,9 +28,9 @@ body {
     font-size: 2rem;
     outline: none;
     border: none;
-    background-color: rgb(0, 0, 255, 0);
+    background-color: rgba(255, 255, 255, 0);
     padding: 2.34rem 2.34rem;
-    
+    color: white;
 }
 #button:hover #button {
     position:relative
@@ -47,27 +45,26 @@ body {
 .dropdownstuff a {
     text-align: left;
     display: block;
-    
-    
+    color: white;
 }
 
 .dropdownstuff {
     font-size: 1.08rem;
     display: none;
     position: absolute;
-    top: 7.53rem;
-    right: 5.6rem;
-    background-color: rgba(127, 255, 212, 0.385);
+    top: 7.6rem;
+    right: 5.58rem;
+    background-color: rgb(0, 0, 0)
 }
 .navbar a:hover, #button:hover #button {
-    background-color: rgba(127, 255, 212, 0.385);
+    background-color: rgb(49, 49, 49)
 }
 #button:hover {
-    background-color: rgba(127, 255, 212, 0.385);
+    background-color: rgb(20, 20, 20);
     
 }
 nav {
-    background: linear-gradient(to right, #28a745, #8bc34a); /* Green gradient */
+    background: linear-gradient(to right, #3a3a3a, #1a1a1a); /* Green gradient */
     padding: 10px 0;
     display: flex;
     justify-content: space-between;
@@ -119,14 +116,12 @@ nav ul li .cart-button:hover {
 
 
 h1 {
-    color: #333;
-    margin-top: 20px;
+    color: #000000;
+    margin-top: 50px;
 }
 
 .food-card {
-    display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
 }
 
 .food-card .card1,
@@ -142,13 +137,13 @@ h1 {
 }
 
 .food-card img {
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 10rem;
     border-radius: 5px;
 }
 
 .food-card h2 {
-    color: #555;
+    color: #000000;
     font-size: 1.2em;
     margin: 10px 0;
 }
@@ -217,4 +212,9 @@ h1 {
 
 .close-cart-button:hover {
     background-color: #c82333;
+}
+
+.category {
+    display: flex;
+    flex-wrap: wrap;
 }
