@@ -108,9 +108,10 @@ nav ul li .cart-button:hover {
 }
 
 .container {
-    width: 80%;
+    width: 90%;
     margin: auto;
     text-align: center;
+    align-items: center;
 }
 
 
@@ -215,4 +216,9 @@ h1 {
 .category {
     display: flex;
     flex-wrap: wrap;
+}
+
+.searchbar {
+    padding: 1rem;
+    display: flex;
 }
