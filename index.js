@@ -17,36 +17,72 @@ function addToCart(button) {
     var cart = document.getElementById("cartItems");
 
     var count = getChildById(parentElement, "quantity");
-    var pv = count.value;
+    var title = getChildById(parentElement, "name");
     var multi = getChildById(parentElement, "v");
+
+    var pv = count.value;
     var multiv = multi.getAttribute("value");
 
     pv = pv * multiv;
     pv = Math.round(pv*100)/100;
     totalprice = totalprice + pv;
 
+    cart.querySelectorAll("*").forEach(function(node) {
+      var text = getChildById(node, "text");
+      if (text != null && text.value == title.innerText) {
+        totalprice -= text.name
+        node.remove();
+      }
+    })
+
     if(pv != 0){
-        var title = getChildById(parentElement, "name");
-        var name = title.innerText;
-        var cartitem = document.createElement("div");
-        var text = document.createElement("h2");
-        var removebutton = document.createElement("button");
+      var name = title.innerText;
+      var cartitem = document.createElement("div");
+      var text = document.createElement("h2");
+      var removebutton = document.createElement("button");
+      var quantity = document.createElement("input");
 
-        text.innerHTML = name + ": $"+ pv;
-        removebutton.textContent = "remove";
+      quantity.type = "number";
+      quantity.id = "quantity";
+      quantity.name = multiv;
+      quantity.value = count.value;
 
-        cart.appendChild(cartitem);
-        cartitem.appendChild(text);
-        cartitem.appendChild(removebutton);
+      text.innerHTML = name + ": $"+ pv;
+      text.id = "text";
+      text.name = pv;
+      text.value = name;
 
-        removebutton.addEventListener("click", () => {
-          cartitem.remove();
-          totalprice -= pv;
-          document.getElementById("totalAmount").innerHTML = "Total: $"+totalprice;
-        });
+      removebutton.textContent = "remove";
+      removebutton.id = "remove";
+
+      cart.appendChild(cartitem);
+      cartitem.appendChild(text);
+      cartitem.appendChild(removebutton);
+      cartitem.appendChild(quantity);
+
+      quantity.addEventListener("input", () => {updateCartItem(cartitem)});
+
+      removebutton.addEventListener("click", () => {
+        cartitem.remove();
+        totalprice -= text.name;
+        document.getElementById("totalAmount").innerHTML = "Total: $"+totalprice;
+       });
     }
 
     document.getElementById("totalAmount").innerHTML = "Total: $"+totalprice;
+}
+
+function updateCartItem(item) {
+  var quantity = getChildById(item, "quantity");
+  var newprice = quantity.name * quantity.value
+  var text = getChildById(item, "text");
+  text.innerHTML = text.value + ": $"+ newprice
+
+  totalprice -= text.name
+  totalprice += newprice
+  text.name = newprice
+
+  document.getElementById("totalAmount").innerHTML = "Total: $"+totalprice;
 }
 
 function loadPage(page) {
@@ -72,7 +108,6 @@ function getChildById(parentElement, id) {
 }
 
 function search(searchinput = document.getElementById("searchbox").value) {
-  
   document.querySelectorAll(".card").forEach(function(node) {
     var title = getChildById(node, "name").innerText;
     if (title.toLowerCase().includes(searchinput.toLowerCase())) {
