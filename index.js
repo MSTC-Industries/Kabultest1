@@ -250,17 +250,19 @@ function searchback() {
 
 function addcards(self, items) {
   for (category in items) {
-      var title = document.createElement("h1")
-      title.innerHTML = category
-      var container = document.createElement("div")
-      container.className = "category"
+      var title = document.createElement("h1");
+      title.innerHTML = category;
+      var container = document.createElement("div");
+      container.className = "category";
 
-      self.appendChild(title)
-      self.appendChild(container)
+      console.log(self);
+
+      self.appendChild(title);
+      self.appendChild(container);
 
       for (itemkey in items[category]) {
-          var item = document.createElement("div")
-          item.className = "card"
+          var item = document.createElement("div");
+          item.className = "card";
 
           item.innerHTML = "\
               <img src='" + items[category][itemkey].img + "' alt='Food Image'>\
@@ -270,8 +272,8 @@ function addcards(self, items) {
                   <label for='quantity'>Quantity: </label>\
                   <input type='number' id='quantity' name='quantity' min='0' max='20' value='0'>\
               </div>\
-              <button onclick='addToCart(this)'>Add to Cart</button>"
-          container.appendChild(item)
+              <button onclick='addToCart(this)'>Add to Cart</button>";
+          container.appendChild(item);
       }
   }
 }
