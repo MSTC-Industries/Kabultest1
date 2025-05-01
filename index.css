@@ -133,6 +133,7 @@ h1 {
     margin: 10px;
     width: 200px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 }
 
 .food-card img {
@@ -146,6 +147,7 @@ h1 {
     font-size: 1.2em;
     margin: 10px 0;
 }
+
 
 .quantity-selector {
     margin-top: 10px;
