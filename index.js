@@ -1,12 +1,16 @@
 var allitems = {
-  //"" : {"img": "", "price": 0.00 },
+  //"" : {"img": "", "price": 1.00 },
   "health.html" : {
     "Health Products" : {
       "Dettol" : {"img" : "Images/DettolKills99.99.png", "price" : 1.00},
       "Dus Jeli" : {"img" : "Images/DusJeli.png", "price" : 1.00},
       "Dus Jelired" : {"img" : "Images/DusJelired.png", "price" : 1.00},
       "Pantene" : {"img" : "Images/Pantene.png", "price" : 1.00},
-      "Alma Oil" : {"img" : "Images/almaoil.png", "price" : 1.00}
+    },
+    "Oils" : {
+      "Argan Oil" : {"img": "Images/arganoil.png", "price": 1.00 },
+      "Alma Oil" : {"img" : "Images/almaoil.png", "price" : 1.00},
+      "Baby Oil" : {"img": "Images/babyoil.png", "price": 1.00 },
     },
     "Diapers" : {
       "Alkozay" : {"img" : "Images/alkozay.png", "price" : 1.00}
@@ -19,34 +23,37 @@ var allitems = {
       "Always Vacuum Flask" : {"img" : "Images/always vacuum flask.png", "price" : 1.00}
     },
     "Machines" : {
-      "Ampia" : {"img": "Images/ampia.png", "price": 0.00 },
+      "Ampia" : {"img": "Images/ampia.png", "price": 1.00 },
+    },
+    "Containers" : {
+      "Anchor Hocking Glass Bakeware" : {"img": "Images/anchor hocking glass bakeware.png", "price": 1.00 },
     }
   },
 
   "drinks.html" : {
     "Drinks": {
-      "Chicory Water": {"img": "Images/ChicoryWater.png", "price": 6 },
-      "Cortas Blossom Water": {"img": "Images/CortasBlossomWater.png", "price": 5 },
       "Dill Weed": {"img": "Images/DillWeed.png", "price": 4 },
       "Ferfresh": {"img": "Images/Ferfresh.png", "price": 3.2 },
-      "Fumitory Water": {"img": "Images/FumitoryWater.png", "price": 3.3 },
       "Hamdard": {"img": "Images/Hamdard.png", "price": 2.5 },
       "Lime Juice": {"img": "Images/LimeJuice.png", "price": 12 },
-      "Mint Water": {"img": "Images/Mintwater.png", "price": 3 },
       "PWillow": {"img": "Images/PWillow.png", "price": 3 }
+    },
+    "Water" : {
+      "Chicory Water": {"img": "Images/ChicoryWater.png", "price": 6 },
+      "Cortas Blossom Water": {"img": "Images/CortasBlossomWater.png", "price": 5 },
+      "Fumitory Water": {"img": "Images/FumitoryWater.png", "price": 3.3 },
+      "Mint Water": {"img": "Images/Mintwater.png", "price": 3 },
     },
     "Tea": {
       "Alokozay Green Gunpowder": {"img": "Images/alokozay green gunpowder.png", "price": 3 },
       "Alokozay Green Tea": {"img": "Images/alokozay green tea.jpg", "price": 3 },
       "Alokozay Orange Pekoe": {"img": "Images/alokozay orange pekoe.jpg", "price": 3 },
-      "Alwazah Tea" : {"img": "Images/alwazah tea.jpg", "price": 0.00 },
+      "Alwazah Tea" : {"img": "Images/alwazah tea.jpg", "price": 1.00 },
     }
   },
 
   "foods.html" : {
-    "Foods": {
-      "Beef Shawarma": {"img": "Images/BeefShawarma.png", "price": 8 },
-      "Amchur Powder": {"img": "Images/AmchurPowder.png", "price": 5 },
+    "Meals": {
       "Almonds": {"img": "Images/Almonds.jpg", "price": 4 },
       "Basak Pudding": {"img": "Images/Basakpudding.png", "price": 3.2 },
       "Beans": {"img": "Images/beans.jpg", "price": 3.3 },
@@ -58,15 +65,9 @@ var allitems = {
       "Cafe Najiar": {"img": "Images/CafeNajiar.png", "price": 3 },
       "Chicken Jaffrezi": {"img": "Images/ChickenJaffrezi.png", "price": 3 },
       "Chicken Tikka": {"img": "Images/ChickenTikka.png", "price": 3 },
-      "Chicken Kabob": {"img": "Images/ChickenKabob.png", "price": 3 },
-      "Citric Acid": {"img": "Images/CitricAcid.png", "price": 3 },
-      "Corn Flour": {"img": "Images/CornFlour.png", "price": 3 },
       "Dalbiji": {"img": "Images/dalbiji.png", "price": 3 },
       "Granulated Sugar": {"img": "Images/GranulatedSugar.png", "price": 3 },
-      "Ground Dried Lime": {"img": "Images/GroundDriedLime.png", "price": 3 },
-      "Ground Meat Kabob": {"img": "Images/groundmeatkabob.png", "price": 3 },
       "Gulab Jamon": {"img": "Images/GulabJamon.png", "price": 3 },
-      "Instant Yeast": {"img": "Images/ImportedInstantYeast.png", "price": 3 },
       "Italian Mushroom Soup": {"img": "Images/ItalianMushroomsoup.png", "price": 3 },
       "Lahori Fish": {"img": "Images/LahoriFish.png", "price": 3 },
       "Malai Kofta": {"img": "Images/MalaiKofta.png", "price": 3 },
@@ -81,7 +82,6 @@ var allitems = {
       "Plain Salt": {"img": "Images/PlainSalt.png", "price": 3 },
       "Plain Panko Bread Crumbs": {"img": "Images/PlainPankoBreadCrumbs.png", "price": 3 },
       "Rajma Raseela": {"img": "Images/RajmaRaseela.png", "price": 3 },
-      "Red Chili Powder": {"img": "Images/Redchilipowder.png", "price": 3 },
       "Rasins": {"img": "Images/rasins.jpg", "price": 4 },
       "WoodWards": {"img": "Images/WoodWards.png", "price": 3 }
     },
@@ -90,7 +90,19 @@ var allitems = {
       "Aahu Bara Basmati Sela Rice": {"img": "Images/aahu bara basmati sela rice.png", "price": 3 }
     },
     "Frozen": {
-      "Aloo Paratha": {"img": "Images/aloo paratha.png", "price": 3 }
+      "Aloo Paratha": {"img": "Images/aloo paratha.png", "price": 3 },
+      "Baklava" : {"img": "Images/baklava.png", "price": 1.00 },
+    },
+    "Powders" : {
+      "Beef Shawarma": {"img": "Images/BeefShawarma.png", "price": 8 },
+      "Amchur Powder": {"img": "Images/AmchurPowder.png", "price": 5 },
+      "Chicken Kabob": {"img": "Images/ChickenKabob.png", "price": 3 },
+      "Citric Acid": {"img": "Images/CitricAcid.png", "price": 3 },
+      "Corn Flour": {"img": "Images/CornFlour.png", "price": 3 },
+      "Ground Dried Lime": {"img": "Images/GroundDriedLime.png", "price": 3 },
+      "Ground Meat Kabob": {"img": "Images/groundmeatkabob.png", "price": 3 },
+      "Instant Yeast": {"img": "Images/ImportedInstantYeast.png", "price": 3 },
+      "Red Chili Powder": {"img": "Images/Redchilipowder.png", "price": 3 },
     },
     "Snacks": {
       "The Ultimate Classic Cake Mix": {"img": "Images/TheUltimateclassiccakemix.png", "price": 3 },
