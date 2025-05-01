@@ -216,7 +216,7 @@ function loadPage(page) {
       .then(data => {
         document.getElementById("pagestuff").innerHTML = data;
 
-        addcards(document.getElementById("pagestuff").children[2], allitems[page])
+        addcards(getChildById(document.getElementById("pagestuff"), "c"), allitems[page]);
       })
       .catch(error => {
         console.error(error);
