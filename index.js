@@ -278,13 +278,15 @@ function addcards(self, items) {
 
           item.innerHTML = "\
               <img src='" + items[category][itemkey].img + "' alt='Food Image'>\
-              <h2 id='name'>" + itemkey + "</h2>\
-              <h3 value = '" + items[category][itemkey].price + "' id='v'>$" + items[category][itemkey].price + " per lb</h3>\
-              <div class='quantity-selector'>\
-                  <label for='quantity'>Quantity: </label>\
-                  <input type='number' id='quantity' name='quantity' min='0' max='20' value='0'>\
-              </div>\
-              <button onclick='addToCart(this)'>Add to Cart</button>";
+              <div class='info'>\
+                <h2 id='name'>" + itemkey + "</h2>\
+                <h3 value = '" + items[category][itemkey].price + "' id='v'>$" + items[category][itemkey].price + " per lb</h3>\
+                <div class='quantity-selector'>\
+                    <label for='quantity'>Quantity: </label>\
+                    <input type='number' id='quantity' name='quantity' min='0' max='20' value='0'>\
+                </div>\
+                <button onclick='addToCart(this)'>Add to Cart</button>\
+              </div>";
           container.appendChild(item);
       }
   }
