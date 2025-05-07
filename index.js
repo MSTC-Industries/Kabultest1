@@ -3,6 +3,8 @@ var allitems = {
   "health.html" : {
     "Anti Bacterial" : {
       "Dettol" : {"img" : "Images/DettolKills99.99.png", "price" : 1.00},
+      "Hydrogen Peroxide" : {"img" : "Images/hydrogrenperoxide.png", "price" : 1.00},
+      "Swan Alcohol" : {"img" : "Images/swan70_.png", "price" : 1.00},
     },
     "Shampoos" : {
       "Dus Jeli" : {"img" : "Images/DusJeli.png", "price" : 1.00},
@@ -19,6 +21,8 @@ var allitems = {
       "Alma Oil" : {"img" : "Images/almaoil.png", "price" : 1.00},
       "Baby Oil" : {"img": "Images/babyoil.png", "price": 1.00 },
       "Eucalyptus Oil" : {"img": "Images/eucaliptisoil.png", "price": 1.00 },
+      "Harmani Vannila Oil" : {"img": "Images/hermanivannillaoil.png", "price": 1.00 },
+      
     },
     "Diapers" : {
       "Alkozay" : {"img" : "Images/alkozay.png", "price" : 1.00}
@@ -33,6 +37,9 @@ var allitems = {
     },
     "Detergent" : {
       "Gain Oxi Detergent" : {"img" : "Images/gain+oxi.png", "price" : 1.00},
+    },
+    "Deoderant" : {
+      "Old Spice" : {"img" : "Images/oldspice.png", "price" : 1.00},
     },
     "Cream" : {
       "Glow and Handsome Rapid Action Cream" : {"img" : "Images/glowandhandsome.png", "price" : 1.00},
@@ -88,6 +95,10 @@ var allitems = {
       "Dandear Black Tea" : {"img": "Images/dandear black tea.jpg", "price": 1.00 },
       "Ginger and Lemon Herbal Tea" : {"img": "Images/ginger and lemon herbal tea.jpg", "price": 1.00 },
       "Ginger and Lemon Peel Tea" : {"img": "Images/ginger and lemon peel infusion.jpg", "price": 1.00 },
+      "Herbal Tea" : {"img" : "Images/herbal tea.jpg", "price" : 1.00},
+      "Nirwana Ginger Tea" : {"img" : "Images/nirwana ginger tea.jpg", "price" : 1.00},
+      "Nirwana Ginger and Lemon Tea" : {"img" : "Images/nirwana lemon ginger tea.jpg", "price" : 1.00},
+      "Sadaf Special Blend Tea" : {"img" : "Images/sadaf tea collection.jpg", "price" : 1.00},
     },
     "Coffee" : {
       "Cafe Najiar": {"img": "Images/CafeNajiar.png", "price": 1.00 },
@@ -209,6 +220,23 @@ var allitems = {
       "Gold Pakmaya": {"img": "Images/GoldPakmaya.png", "price": 1.00 },
       "Biskrem Duo Cookies": {"img": "Images/biskrem duo cookies.jpg", "price": 1.00 },
       "Goaldees Fruits Bar": {"img": "Images/goaldees.png", "price": 1.00 },
+      "Shahi Bar Almond": {"img": "Images/shahibrown.png", "price": 1.00 },
+      "Shahi Bar Pistachio": {"img": "Images/shahigreen.png", "price": 1.00 },
+      "Shahi Bar Malai": {"img": "Images/shahigrey.png", "price": 1.00 },
+      "Shahi Bar Mango": {"img": "Images/shahiorange.png", "price": 1.00 },
+      "Shahi Bar Strawberry": {"img": "Images/shahipink.png", "price": 1.00 },
+      "Shahi Bar Chocolate": {"img": "Images/shahipurple.png", "price": 1.00 },
+      "Loacker Bar Apline Milk": {"img": "Images/loacker alpine milk.jpg", "price": 1.00 },
+      "Loacker Bar Dark Chocolate": {"img": "Images/loacker chocolat dark chocolate.png", "price": 1.00 },
+      "Loacker Bar Napolitaner": {"img": "Images/loacker chocolat napolitaner.png", "price": 1.00 },
+      "Loacker Bar Chocolate": {"img": "Images/loacker chocolate.png", "price": 1.00 },
+      "Loacker Bar Double Chocolate": {"img": "Images/loacker double choc.png", "price": 1.00 },
+      "Loacker Bar Gardena Hazelnut": {"img": "Images/loacker gardena hazelnut.jpg", "price": 1.00 },
+      "Loacker Bar Gardena": {"img": "Images/loacker gardena.png", "price": 1.00 },
+      "Loacker Bar Hazelnut": {"img": "Images/loacker hazelnut.jpg", "price": 1.00 },
+      "Loacker Bar Peanut Butter": {"img": "Images/loacker peanut butter.png", "price": 1.00 },
+      "Loacker Bar Vanilla": {"img": "Images/loacker vanilla.png", "price": 1.00 },
+      
     }
   }
 }
