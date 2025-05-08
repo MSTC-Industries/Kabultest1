@@ -381,6 +381,7 @@ function addToCart(button) {
         node.remove();
       }
     })
+    totalprice = Math.round(totalprice*100)/100;
 
     if(pv != 0){
       var name = title.innerText;
@@ -412,6 +413,7 @@ function addToCart(button) {
       removebutton.addEventListener("click", () => {
         cartitem.remove();
         totalprice -= text.name;
+        totalprice = Math.round(totalprice*100)/100;
         document.getElementById("totalAmount").innerHTML = "Total: $"+totalprice;
        });
     }
@@ -428,6 +430,7 @@ function updateCartItem(item) {
   totalprice -= text.name
   totalprice += newprice
   text.name = newprice
+  totalprice = Math.round(totalprice*100)/100;
 
   document.getElementById("totalAmount").innerHTML = "Total: $"+totalprice;
 }
