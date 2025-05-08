@@ -5,9 +5,12 @@ var allitems = {
       "Dettol" : {"img" : "Images/DettolKills99.99.png", "price" : 1.00},
       "Hydrogen Peroxide" : {"img" : "Images/hydrogrenperoxide.png", "price" : 1.00},
       "Swan Alcohol" : {"img" : "Images/swan70_.png", "price" : 1.00},
+      "Ultra Anti Bacterial Orange Scent" : {"img" : "Images/ultraantibacterial.png", "price" : 1.00},
+      "Ultra Anti Bacterial Green Apple Scent" : {"img" : "Images/ultraantigreen.png", "price" : 1.00},
     },
     "Medication" : {
       "Psoriasis Relief Medicated Moisturizer" : {"img" : "Images/psoraisis.png", "price" : 1.00},
+      "Arthritis & Muscle Pain Relief Cream" : {"img" : "Images/sheffieldarthritis.png", "price" : 1.00},
     },
     "Shampoos" : {
       "Dus Jeli" : {"img" : "Images/DusJeli.png", "price" : 1.00},
@@ -24,8 +27,8 @@ var allitems = {
       "Alma Oil" : {"img" : "Images/almaoil.png", "price" : 1.00},
       "Baby Oil" : {"img": "Images/babyoil.png", "price": 1.00 },
       "Eucalyptus Oil" : {"img": "Images/eucaliptisoil.png", "price": 1.00 },
-      "Harmani Vannila Oil" : {"img": "Images/hermanivannillaoil.png", "price": 1.00 },
-      
+      "Harmani Vanilla Oil" : {"img": "Images/hermanivannillaoil.png", "price": 1.00 },
+      "Vatika Almond Hair Oil" : {"img": "Images/vatika.png", "price": 1.00 },
     },
     "Diapers" : {
       "Alkozay" : {"img" : "Images/alkozay.png", "price" : 1.00},
@@ -62,6 +65,9 @@ var allitems = {
       "Always Vacuum Flask" : {"img" : "Images/always vacuum flask.png", "price" : 1.00},
       "Brentwood Vacuum Coffee Pot" : {"img" : "Images/brentwood vacuum coffe pot.jpg", "price" : 1.00},
       "Montini Vacuum Flask" : {"img" : "Images/montini vacuum flask.jpg", "price" : 1.00},
+      "Shimizu 2L Jug" : {"img" : "Images/shimizu 2L jug.jpeg", "price" : 1.00},
+      "SS Vacuum Jug" : {"img" : "Images/SS vacuum jug.jpg", "price" : 1.00},
+      "Vacuum Jug" : {"img" : "Images/vacummjug.png", "price" : 1.00},
     },
     "Cups" : {
       "Blinkmax Cup" : {"img" : "Images/blinkmax.png", "price" : 1.00}, //pls identify these 3 cups
@@ -85,6 +91,10 @@ var allitems = {
       "Fancy Cup" : {"img": "Images/fancycup.png", "price": 1.00 }, //no what's it actually called the image is too low quality
       "Opal Glass Ware" : {"img": "Images/opalglassware.png", "price": 1.00 },
       "Paper Plates" : {"img": "Images/paperplate.png", "price": 1.00 },
+    },
+    "Utility" : {
+      "Renuzit Forever Raspberry Freshener" : {"img": "Images/renuzit.png", "price": 1.00 }, //probaly shoudnt go in kitchen
+      "Heavy Duty Multi Purpose Scrubber Sponge" : {"img": "Images/scrubbersponge.png", "price": 1.00 },
     }
   },
 
@@ -119,10 +129,12 @@ var allitems = {
       "Sadaf Special Blend Tea" : {"img" : "Images/sadaf tea collection.jpg", "price" : 1.00},
       "Mezan Ultra Rich Tea" : {"img" : "Images/mezan black tea.jpg", "price" : 1.00},
       "Persian Special Tea" : {"img" : "Images/persian special tea.jpg", "price" : 1.00},
+      "Rize Turist Cayi Tea" : {"img" : "Images/rize turist cayi.png", "price" : 1.00},
     },
     "Coffee" : {
       "Cafe Najiar": {"img": "Images/CafeNajiar.png", "price": 1.00 },
       "Medium with Cardamon Turkish Coffee": {"img": "Images/medium coffe with cardamom.jpg", "price": 1.00 },
+      "Nescafe Tradicho Forte Coffee": {"img": "Images/tradicho forte.png", "price": 1.00 },
     },
     "Malt" : {
       "Barbican Apple" : {"img": "Images/barbican.png", "price": 1.00 },
@@ -141,6 +153,11 @@ var allitems = {
       "Rani Float Peach" : {"img": "Images/rani float peach.jpg", "price": 1.00 },
       "Rani Float Mango" : {"img": "Images/rani float peach.png", "price": 1.00 },
       "Rani Float Pineapple" : {"img": "Images/rani float pineapple.jpg", "price": 1.00 },
+    },
+    "Juice" : {
+      "Shezan Mango Fruit Drink" : {"img": "Images/shezan mango fruit drink.png", "price": 1.00 },
+      "Tamek Peach Juice" : {"img": "Images/tamek peach juice.png", "price": 1.00 },
+      "Tamek Tomato Juice" : {"img": "Images/tamek tomato juice.png", "price": 1.00 },
     }
   },
 
@@ -181,12 +198,24 @@ var allitems = {
       "National Quorma": {"img": "Images/national quorma.jpg", "price": 1.00 },
       "National Shami Kabab": {"img": "Images/national shami kabab.jpg", "price": 1.00 },
       "Phyllo": {"img": "Images/phyllo.jpg", "price": 1.00 },
+      "Mezban Rasgulla": {"img": "Images/rasgulla.png", "price": 1.00 },
+      "Roshni Peanuts": {"img": "Images/roshnipeanuts.png", "price": 1.00 },
+      "Seasoned Bread Crumbs": {"img": "Images/seasoned bread crumbs.png", "price": 1.00 },
+      "Shan Biryani": {"img": "Images/shan biryani.png", "price": 1.00 },
+      "Shan Chana Chaat": {"img": "Images/shan chana chaat.jpg", "price": 1.00 },
+      "Shan Daal Malsala": {"img": "Images/shan daal malsala.jpg", "price": 1.00 },
+      "Shan Haleem": {"img": "Images/shan haleem.jpg", "price": 1.00 },
+      "Shan Keema": {"img": "Images/shan keema.png", "price": 1.00 },
+      "Shan Paya": {"img": "Images/shan paya.png", "price": 1.00 },
+      "Sukkary Dates": {"img": "Images/sukkary dates.jpg", "price": 1.00 },
+      "Zarrin Hard Sugar Cube": {"img": "Images/zarrinhardsugarcubes.png", "price": 1.00 },
     },
     "Bread" : {
       "Paratha Plain": {"img": "Images/paratha plain.png", "price": 1.00 },
       "Taza Parathas": {"img": "Images/parathas.jpg", "price": 1.00 },
       "Aloo Paratha": {"img": "Images/aloo paratha.png", "price": 1.00 },
       "Tandoori Plain Naan": {"img": "Images/plain naan.png", "price": 1.00 },
+      "Tandoori Garlic Naan": {"img": "Images/tandoori garlic naan.png", "price": 1.00 },
     },
     "Rice": {
       "Yara Egyptian Rice": {"img": "Images/YaraEgyptianRice.png", "price": 1.00 },
@@ -195,6 +224,7 @@ var allitems = {
       "Fragrant Jasmine Rice": {"img": "Images/fragrant jasmine rice.jpg", "price": 1.00 },
       "Naso Extra Long Sela Basmati Rice": {"img": "Images/long sela basmati rice.jpg", "price": 1.00 },
       "Mother Rice Sela Rice": {"img": "Images/mother rice sela rice.jpg", "price": 1.00 },
+      "Aahu Barah Super Basmati Sela Rice": {"img": "Images/super basmati sela rice.png", "price": 1.00 },
     },
     "Frozen": {
       "Baklava" : {"img": "Images/baklava.png", "price": 1.00 },
@@ -218,6 +248,8 @@ var allitems = {
       "Medjool Dates": {"img": "Images/medjool dates.png", "price": 1.00 },
       "Mr Nut Sunflower Seeds": {"img": "Images/mrnutsunflower.png", "price": 1.00 },
       "Peeled Broad Beans": {"img": "Images/peeled broad beans.jpg", "price": 1.00 },
+      "Roasted Unsalted Sunflower Seeds": {"img": "Images/roasted unsalted sunflower seeds.jpg", "price": 1.00 },
+      "Sabzi Polo": {"img": "Images/sabzi polo.jpg", "price": 1.00 },
     },
     "Dairy" : {
       "Dahi Whole Milk Yogurt": {"img": "Images/dahi whole milk yogurt.png", "price": 1.00 },
@@ -225,6 +257,7 @@ var allitems = {
       "Kiri Cream and Milk": {"img": "Images/kiri cream.png", "price": 1.00 },
       "Lebni Kefir Cheese": {"img": "Images/lebni kefir cheese.png", "price": 1.00 },
       "Mint Yogurt Drink": {"img": "Images/mint yogurt drink.png", "price": 1.00 },
+      "Icim Ucgen Peynir Cream": {"img": "Images/ucgen peynir.jpg", "price": 1.00 },
     },
     "Powders" : {
       "Beef Shawarma": {"img": "Images/BeefShawarma.png", "price": 1.00 },
@@ -258,6 +291,9 @@ var allitems = {
       "Meat": {"img": "Images/Meat.jpg", "price": 1.00 }, //brother what is meat...
       "National Chapli Kabab": {"img": "Images/national chapli kabab.jpg", "price": 1.00 },
       "National Chicken Tikka": {"img": "Images/national chicken tikka.png", "price": 1.00 },
+      "National Chicken Masala": {"img": "Images/shan chicken masala.png", "price": 1.00 },
+      "Shan Karachi Beef Biryani": {"img": "Images/shan karachi beef biryani.jpg", "price": 1.00 },
+      "K&N's Tender Pops": {"img": "Images/tender pops.png", "price": 1.00 },
     },
     "Snacks": { //take stuff out of this category
       "The Ultimate Classic Cake Mix": {"img": "Images/TheUltimateclassiccakemix.png", "price": 1.00 },
@@ -283,8 +319,10 @@ var allitems = {
       "Gold Pakmaya": {"img": "Images/GoldPakmaya.png", "price": 1.00 },
       "Biskrem Duo Cookies": {"img": "Images/biskrem duo cookies.jpg", "price": 1.00 },
       "Goaldees Fruits Bar": {"img": "Images/goaldees.png", "price": 1.00 },
-      "Lays": {"img": "Images/indianlays.png", "price": 1.00 },
+      "Lays Chips": {"img": "Images/indianlays.png", "price": 1.00 },
       "Orient Strawberry Chocolate": {"img": "Images/minichocolate.png", "price": 1.00 },
+      "Slantix Chips": {"img": "Images/slantix.png", "price": 1.00 },
+      "Slanty Chips": {"img": "Images/slanty.png", "price": 1.00 },
     },
     "Bars" : {
       "Loacker Bar Apline Milk": {"img": "Images/loacker alpine milk.jpg", "price": 1.00 },
@@ -301,6 +339,8 @@ var allitems = {
     },
     "Oil" : {
       "Mazola Corn Oil": {"img": "Images/mazola corn oil.png", "price": 1.00 },
+      "Zer Sunflower Oil": {"img": "Images/sunflower oil.jpg", "price": 1.00 },
+      "Vegetable Oil": {"img": "Images/vegetable oil.png", "price": 1.00 },
     }
   }
 }
