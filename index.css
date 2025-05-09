@@ -17,13 +17,14 @@ body {
     background: transparent;
 }
 
-.navbar a {
+a {
     padding: 1.1rem;
     text-decoration: none;
 }
 
 .navbar a:hover {
-    background-color: rgb(49, 49, 49);
+    background-color: rgb(0, 119, 10);
+    text-decoration: none;
 }
 
 /* Button */
@@ -31,7 +32,7 @@ body {
     display: inline-block;
     font-size: 2rem;
     border: none;
-    background-color: rgb(66, 66, 66);
+    background-color: rgb(26, 167, 8);
     padding: 2.34rem;
     color: white;
     cursor: pointer;
@@ -39,7 +40,7 @@ body {
 }
 
 #button:hover {
-    background-color: rgb(20, 20, 20);
+    background-color: rgb(0, 119, 10);
 }
 
 /* Dropdown */
@@ -49,7 +50,7 @@ body {
     position: absolute;
     top: 7.6rem;
     right: 5.58rem;
-    background-color: black;
+    background-color: rgb(83, 169, 71);
     z-index: 9999; /* Ensures it's above other elements */
     width: 200px;
 }
@@ -162,28 +163,43 @@ nav ul li .cart-button:hover {
     margin-left: 5px;
 }
 
-/* Cart Panel */
+/* Improved Cart Panel */
 .cart-panel {
     position: fixed;
     right: 0;
     top: 0;
     width: 0;
     height: 100%;
-    background-color: white;
-    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    background-color: #f8f9fa;
+    box-shadow: -4px 0 10px rgba(0, 0, 0, 0.2);
     overflow-x: hidden;
-    transition: 0.3s;
+    transition: width 0.3s ease-in-out;
     z-index: 1000;
+    border-left: 3px solid #28a745;
 }
 
+/* Cart Content */
 .cart-panel .cart-content {
-    width: 300px;
-    padding: 20px;
+    width: 350px;
+    padding: 25px;
     display: none;
+    text-align: center;
+}
+
+.cart-content div {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.cart-content button {
+    height: 30px;
+    width: 60px;
 }
 
 .cart-panel.open {
-    width: 300px;
+    width: 350px;
 }
 
 .cart-panel.open .cart-content {
@@ -193,18 +209,27 @@ nav ul li .cart-button:hover {
 /* Buttons */
 .close-cart-button,
 .pay {
-    background-color: #dc3545;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-top: 10px;
-    border-radius: 5px;
+    height: 40px;
+    width: 80px;
 }
 
-.close-cart-button:hover {
-    background-color: #c82333;
+/* Cart Items */
+#cartItems {
+    list-style-type: none;
+    padding: 0;
+}
+
+#cartItems li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+}
+
+/* Total Amount */
+#totalAmount {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
 }
 
 /* Misc */
@@ -227,8 +252,9 @@ nav ul li .cart-button:hover {
     width: 100%;
 }
 #searchbox {
-    width: 6rem;
+    width: 10rem;
     padding: 0.12px;
+    padding-left: 10px;
     border: 2px solid #ddd;
     border-radius: 20px;
     outline: none;
@@ -266,7 +292,7 @@ input[type="number"]::-webkit-inner-spin-button,
             filter: invert(1%) sepia(82%) saturate(749%) hue-rotate(350deg) brightness(91%) contrast(105%);
             vertical-align: middle;
         }
-.info button {
+button {
     margin-top: 0.3rem;
     background-color: rgb(9 196 100 / 60%);
     cursor: pointer;
@@ -296,4 +322,18 @@ input[type="number"]::-webkit-inner-spin-button,
 .searchbar button:active {
     background-color: rgb(0 255 233 / 60%);
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#text {
+    margin: 5px;
+    font-size: 20px;
+}
+
+#Products {
+    font-size: 50px;
+}
+
+.categorytitle {
+    padding-top: 60px;
+    font-size: 40px;
 }

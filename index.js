@@ -386,7 +386,7 @@ function addToCart(button) {
     if(pv != 0){
       var name = title.innerText;
       var cartitem = document.createElement("div");
-      var text = document.createElement("h2");
+      var text = document.createElement("p");
       var removebutton = document.createElement("button");
       var quantity = document.createElement("input");
 
@@ -482,6 +482,7 @@ function addcards(self, items) {
   for (category in items) {
       var title = document.createElement("h1");
       title.innerHTML = category;
+      title.className = 'categorytitle'
       var container = document.createElement("div");
       container.className = "category";
 
@@ -498,12 +499,12 @@ function addcards(self, items) {
               <img src='" + items[category][itemkey].img + "' alt='Food Image'>\
               <div class='info'>\
                 <h2 id='name'>" + itemkey + "</h2>\
-                <h3 value = '" + items[category][itemkey].price + "' id='v'>$" + items[category][itemkey].price + " per</h3>\
+                <p value = '" + items[category][itemkey].price + "' id='v'>$" + items[category][itemkey].price + " per item</p>\
                 <div class='quantity-selector'>\
                     <label for='quantity'>Quantity: </label>\
                     <input type='number' id='quantity' name='quantity' min='0' max='20' value='0'>\
                 </div>\
-                <button onclick='addToCart(this)'>Add to Cart</button>\
+                <button onclick='addToCart(this)' id='add'>Add to Cart</button>\
               </div>";
           container.appendChild(item);
       }
